@@ -226,7 +226,7 @@ Please update your ```test/expected_output.json``` according to your algorithm r
    * For the interfaces of the algorithm, please select *Generic Medical Image (Image)* as Inputs, and *Nodules (Multiple 2D Bounding Boxes)* as Outputs.
    * Do not forget to pick the workstation *Viewer CIRRUS Core (Public)*.  
    
-   ![alt text](https://github.com/DIAGNijmegen/node21/blob/main/images/alg_interfaces.PNG)
+   ![alt text](https://github.com/ecemlago/node21_detection_baseline/blob/master/images/alg_interfaces.PNG)
   
    * At the bottom of the page, indicate that you would like your Docker image to use GPU and how much memory it needs
    ![alt text](https://github.com/DIAGNijmegen/node21/blob/main/images/container_img_config.PNG)
@@ -234,10 +234,10 @@ Please update your ```test/expected_output.json``` according to your algorithm r
 2. After saving it, you can either upload your docker container (.tar.gaz) or you can let grand-challenge build your algorithm container from your github repository. 
     
     OPTION 1: If you would like to upload your docker container directly, please click on "upload a Container" button, and upload your container. You can also later overwrite your container by uploading a new one. That means that when you make changes to your algorithm, you could overwrite your container and submit the updated version of your algorithm to node21:
-    ![alt text](https://github.com/DIAGNijmegen/node21/blob/main/images/algorithm_uploadcontainer.PNG)
+    ![alt text](https://github.com/ecemlago/node21_detection_baseline/blob/master/images/algorithm_uploadcontainer.PNG)
     
     OPTION 2: If you would like to submit your repository and let grand-challenge build the docker image for you, please click on "Link github repo" and select your repository to give repository access to grand-challenge to build your algorithm. Once this is done, you should tag the repo to kick off the build process. Please bear in mind that, the root of the github repository must contain the dockerfile, the licence, the gitattributes in order to build the image for you. Further, you must have admin rights to the repository so that you can give permission for GC to install an app there. 
-    ![alt text](https://github.com/DIAGNijmegen/node21/blob/main/images/container_image.PNG)
+    ![alt text](https://github.com/ecemlago/node21_detection_baseline/blob/master/images/container_image.PNG)
 
 3. OPTIONAL: Please note that it can take a while (several minutes) until the container becomes active. After it uploads successfully you will see the details of the Algorithm with "Ready: False"
    You can check back at any time on the "Containers" page and see if the status has changed to "Active".
